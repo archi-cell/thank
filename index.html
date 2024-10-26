@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catering Options</title>
+    <link rel="stylesheet" href="catering.css">
+</head>
+<body>
+
+<h1>Catering Options</h1>
+
+<div class="catering-container">
+
+    <div class="card">
+        <img src="https://img.freepik.com/premium-photo/buffet-food-catering-food-party-restaurant-mini-canapes-snacks-appetizers-made-by-aiartificial-intelligence_41969-11904.jpg" alt="Buffet">
+        <div class="card-content">
+            <h2>Buffet</h2>
+            <p>Our buffet option offers a wide variety of dishes for your guests, catering to all dietary needs with self-service convenience.</p>
+            <p class="price">Price: $25 per person</p>
+            <button onclick="confirmBooking(this, 'Buffet')">Choose Buffet</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://res.cloudinary.com/hz3gmuqw6/image/upload/c_fill,q_auto,w_750/f_auto/plating-food-phpsUAQLM" alt="Plated Meals">
+        <div class="card-content">
+            <h2>Plated Meals</h2>
+            <p>Enjoy our sophisticated plated meals, perfect for formal events, served individually for a fine dining experience.</p>
+            <p class="price">Price: $40 per person</p>
+            <button onclick="confirmBooking(this, 'Plated Meals')">Choose Plated Meals</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://media-cdn.tripadvisor.com/media/photo-s/28/ec/5f/0a/our-food-truck-located.jpg" alt="Food Trucks">
+        <div class="card-content">
+            <h2>Food Trucks</h2>
+            <p>Add a trendy and fun vibe to your event with our selection of gourmet food trucks, offering a range of cuisines.</p>
+            <p class="price">Price: Varies</p>
+            <button onclick="confirmBooking(this, 'Food Trucks')">Choose Food Trucks</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://www.shutterstock.com/image-photo/collage-different-pictures-tasty-food-260nw-260006492.jpg" alt="Cuisine">
+        <div class="card-content">
+            <h2>Cuisines</h2>
+            <p>Tailor your event's menu to perfection, ensuring your guests enjoy a unique culinary experience catered to your preferences.</p>
+            <p class="price">Price: Contact for quote</p>
+            <button onclick="confirmBooking(this, 'Custom Menus')">Choose Custom Menu</button>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    function confirmBooking(button, option) {
+        alert('You have chosen the ' + option + ' catering option. Your booking has been confirmed!');
+        button.textContent = 'Booked';
+        button.disabled = true;
+    }
+</script>
+
+</body>
+</html>
